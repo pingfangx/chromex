@@ -1,0 +1,98 @@
+{
+  "manifest_description": {
+    "message": "pingfangx tools"
+  },
+  "background_menu": {
+    "message": "pingfangx"
+  },
+  "background_menu_copy": {
+    "message": "Copy"
+  },
+  "background_menu_copy_title": {
+    "message": "title"
+  },
+  "background_menu_copy_title_first": {
+    "message": "titleFirst"
+  },
+  "background_menu_copy_title_last": {
+    "message": "titleLast"
+  },
+  "background_menu_copy_h": {
+    "message": "h"
+  },
+  "background_menu_copy_url": {
+    "message": "url"
+  },
+  "background_menu_copy_markdown_title_url": {
+    "message": "[title](url)"
+  },
+  "background_menu_copy_markdown_title_first_url": {
+    "message": "[titleFirst](url)"
+  },
+  "background_menu_copy_markdown_title_last_url": {
+    "message": "[titleLast](url)"
+  },
+  "background_menu_copy_markdown_h_url": {
+    "message": "[h](url)"
+  },
+  "background_menu_copy_active_element": {
+    "message": "activeElement"
+  },
+  "background_menu_copy_reference": {
+    "message": "copy as reference"
+  },
+  "background_menu_copy_reference_default": {
+    "message": "default"
+  },
+  "background_menu_copy_reference_title_url": {
+    "message": "title. url."
+  },
+  "background_menu_copy_reference_title_last_url": {
+    "message": "titleLast. url."
+  },
+  "background_menu_copy_reference_h_url": {
+    "message": "h. url."
+  },
+  "background_menu_copy_reference_title_h_url": {
+    "message": "title. h. url."
+  },
+  "background_menu_copy_reference_title_last_h_url": {
+    "message": "titleLast. h. url."
+  },
+  "background_menu_copy_reference_title_last_title_first_url": {
+    "message": "titleLast. titleFirst. url."
+  },
+  "background_notification_copy_success": {
+    "message": "Copy Success"
+  },
+  "background_menu_navigate": {
+    "message": "Navigate"
+  },
+  "background_menu_navigate_hl_zh_cn": {
+    "message": "hl=zh-CN"
+  },
+  "background_menu_translate": {
+    "message": "Translate"
+  },
+  "background_menu_translate_google": {
+    "message": "Google"
+  },
+  "background_menu_translate_baidu": {
+    "message": "Baidu"
+  },
+  "options_textarea_rules_label": {
+    "message": "Copy url interceptor pattern"
+  },
+  "options_textarea_rules_placeholder": {
+    "message": "Input rules,regex is supported\nPer rule on one line,search and replace separated by |"
+  },
+  "options_button_save_save": {
+    "message": "Save"
+  },
+  "options_button_save_saving": {
+    "message": "Saving"
+  },
+  "options_button_save_saved": {
+    "message": "Saved"
+  }
+}

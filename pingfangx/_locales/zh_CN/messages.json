@@ -1,0 +1,47 @@
+{
+  "manifest_description": {
+    "message": "pingfangx 工具"
+  },
+  "background_menu": {
+    "message": "pingfangx"
+  },
+  "background_menu_copy": {
+    "message": "复制"
+  },
+  "background_menu_copy_reference": {
+    "message": "复制为参考文献"
+  },
+  "background_menu_copy_reference_default": {
+    "message": "默认"
+  },
+  "background_notification_copy_success": {
+    "message": "复制成功"
+  },
+  "background_menu_navigate": {
+    "message": "导航"
+  },
+  "background_menu_translate": {
+    "message": "翻译"
+  },
+  "background_menu_translate_google": {
+    "message": "谷歌"
+  },
+  "background_menu_translate_baidu": {
+    "message": "百度"
+  },
+  "options_textarea_rules_label": {
+    "message": "复制地址时拦截处理的模式"
+  },
+  "options_textarea_rules_placeholder": {
+    "message": "请输入规则，支持正则\n每条规则占一行，搜索和替换用 | 分隔"
+  },
+  "options_button_save_save": {
+    "message": "保存"
+  },
+  "options_button_save_saving": {
+    "message": "保存中"
+  },
+  "options_button_save_saved": {
+    "message": "已保存"
+  }
+}
