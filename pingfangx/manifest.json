@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "pingfangx",
+  "version": "1.0.0",
+  "description": "__MSG_manifest_description__",
+  "icons": {
+    "128": "images/icon128.png"
+  },
+  "default_locale": "en",
+  "homepage_url": "https://www.pingfangx.com",
+  "background": {
+    "service_worker": "src/background/pingfangx.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "src/script/menu/copy_script.js"
+      ]
+    }
+  ],
+  "options_ui": {
+    "page": "src/option/options.html",
+    "open_in_tab": false
+  },
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "notifications",
+    "storage"
+  ]
+}
