@@ -39,7 +39,7 @@
     "message": "activeElement"
   },
   "background_menu_copy_reference": {
-    "message": "copy as reference"
+    "message": "Copy as reference"
   },
   "background_menu_copy_reference_default": {
     "message": "default"
@@ -80,11 +80,17 @@
   "background_menu_translate_baidu": {
     "message": "Baidu"
   },
-  "options_textarea_rules_label": {
+  "options_label_textarea_rules": {
     "message": "Copy url interceptor pattern"
   },
   "options_textarea_rules_placeholder": {
     "message": "Input rules,regex is supported\nPer rule on one line,search and replace separated by |"
+  },
+  "options_label_include_reference_type": {
+    "message": "Include reference type [EB/OL]"
+  },
+  "options_label_include_reference_date": {
+    "message": "Include reference date"
   },
   "options_button_save_save": {
     "message": "Save"

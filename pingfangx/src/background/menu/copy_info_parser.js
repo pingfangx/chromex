@@ -8,18 +8,18 @@ const RULE_TYPE_ALL = "all"
 const RULE_TYPE_TITLE = "title"
 const RULE_TYPE_URL = "url"
 
-/** 保存的规则 text */
-async function getRuleTexts() {
+/** 保存的配置 */
+async function getConfig() {
     return new Promise((resolve, _) => {
-        chrome.storage.sync.get("rules", function (result) {
-            resolve(result.rules)
+        chrome.storage.sync.get(null, function (result) {
+            resolve(result)
         })
     })
 }
 
 /** 保存的规则 */
 async function getRuleConfigs() {
-    const ruleTexts = await getRuleTexts()
+    const ruleTexts = await getConfig().rules
     const ruleConfigs = []
     if (!ruleTexts) {
         return ruleConfigs
@@ -100,7 +100,8 @@ async function parseText(title, h, url, data) {
 }
 
 async function parseReference(title, h, url, data) {
-    const ruleConfigs = await getRuleConfigs()
+    const config = await getConfig()
+    const ruleConfigs = config.rules
     let text = ""
     if (data.title) {
         text += processTitleAndAddDot(ruleConfigs, title)
@@ -121,6 +122,23 @@ async function parseReference(title, h, url, data) {
     if (data.h) {
         text += processTitleAndAddDot(ruleConfigs, h)
     }
+
+    if (config.includeReferenceType) {
+        // 包含引用类型
+        if (text.endsWith(". ")) {
+            text = text.substring(0, text.length - 2)
+        }
+        text += `[EB/OL]. `
+    }
+    if (config.includeReferenceDate) {
+        // 包含引用日期
+        const d = new Date()
+        const year = d.getFullYear()
+        const month = (d.getMonth() + 1).toString().padStart(2, "0")
+        const day = d.getDate().toString().padStart(2, "0")
+        text += `[${year}-${month}-${day}]. `
+    }
+
     if (data.url) {
         text += handleTextByRuleConfigs(ruleConfigs, url, RULE_TYPE_URL)
         text += ". "

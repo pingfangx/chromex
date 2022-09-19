@@ -29,11 +29,17 @@
   "background_menu_translate_baidu": {
     "message": "百度"
   },
-  "options_textarea_rules_label": {
+  "options_label_textarea_rules": {
     "message": "复制地址时拦截处理的模式"
   },
   "options_textarea_rules_placeholder": {
     "message": "请输入规则，支持正则\n每条规则占一行，搜索和替换用 | 分隔"
+  },
+  "options_label_include_reference_type": {
+    "message": "包含文献类型标识/文献载体标识（[EB/OL]）"
+  },
+  "options_label_include_reference_date": {
+    "message": "包含引用日期"
   },
   "options_button_save_save": {
     "message": "保存"

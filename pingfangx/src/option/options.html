@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <title>pingfangx</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+
 <body>
+<h3 id="title_copy"></h3>
 <div>
-    <label id="rules_label" for="rules"></label>
-    <textarea id="rules" rows="5" style="width: 100%"></textarea>
+    <label id="label_rules" for="rules"></label>
+    <textarea id="rules" rows="5" style="width: 100%;" class="margin-top"></textarea>
 </div>
+
+<h3 id="title_copy_as_reference"></h3>
 <div>
-    <input type="button" id="save"/>
+    <input id="cb_include_reference_type" type="checkbox"/>
+    <label id="label_include_reference_type" for="cb_include_reference_type"></label>
+    <br>
+
+    <input id="cb_include_reference_date" type="checkbox"/>
+    <label id="label_include_reference_date" for="cb_include_reference_date"></label>
+</div>
+
+<div>
+    <input type="button" id="save" class="margin-top"/>
 </div>
 </body>
+
 <script src="options.js"></script>
 </html>
