@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "pingfangx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "__MSG_manifest_description__",
   "icons": {
     "128": "images/icon128.png"
