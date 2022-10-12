@@ -25,7 +25,7 @@ function translate(e, url) {
 
 /** 谷歌翻译 */
 function translateByGoogle(e) {
-    translate(e, "https://translate.google.cn/#en/zh-CN/")
+    translate(e, "https://translate.google.com/?sl=en&tl=zh-CN&op=translate&text=")
 }
 
 /** 百度翻译 */
