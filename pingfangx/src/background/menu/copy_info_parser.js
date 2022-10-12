@@ -33,9 +33,17 @@ async function getConfig() {
     })
 }
 
-/** 保存的规则 */
+/** 获取配置的规则 */
 async function getRuleConfigs() {
-    const ruleTexts = await getConfig().rules
+    // 如下会失败，没有等待，直接继续执行了
+    // const ruleTexts = await getConfig().rules
+    const config = await getConfig()
+    return parseRuleConfigFromConfig(config)
+}
+
+/** 从 config 中解析，没有直接用 string 参数，避免外部需要知道 key */
+function parseRuleConfigFromConfig(config) {
+    const ruleTexts = config.rules
     const ruleConfigs = []
     if (!ruleTexts) {
         return ruleConfigs
@@ -117,7 +125,7 @@ async function parseText(title, h, url, data) {
 
 async function parseReference(title, h, url, data) {
     const config = await getConfig()
-    const ruleConfigs = config.rules
+    const ruleConfigs = parseRuleConfigFromConfig(config)
     let text = ""
     if (data.title) {
         text += processTitleAndAddDot(ruleConfigs, title)
